@@ -1,0 +1,82 @@
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #ffffff;
+}
+
+/* Cím */
+#lblRegisterTitle {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e2a3a;
+}
+
+/* Általános label-ek */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+/* Input mezők */
+.input-field {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-text-fill: #222222;
+}
+
+.input-field:focused {
+    -fx-border-color: #4a90e2;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 2);
+}
+
+/* Hibák és visszajelzések */
+#lblRegisterUserNameResult,
+#lblRegisterEmailResult,
+#lblLoginPasswordStrengthResult,
+#lblRegisterResult {
+    -fx-font-size: 12px;
+    -fx-text-fill: red;
+}
+
+/* Fő gomb (Regisztráció) */
+#btnRegister {
+    -fx-background-color: linear-gradient(to right, #00c6ff, #0072ff);
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-cursor: hand;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 4, 0, 0, 2);
+}
+
+#btnRegister:hover {
+    -fx-opacity: 0.9;
+}
+
+/* Másodlagos gomb (visszalépés) */
+#btnRegisterToLogin {
+    -fx-background-color: transparent;
+    -fx-text-fill: #0072ff;
+    -fx-font-size: 13px;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+
+#btnRegisterToLogin:hover {
+    -fx-text-fill: #004bb1;
+}
+
+.text-field.error, .password-field.error {
+    -fx-border-color: #e74c3c;
+    -fx-background-color: #fff5f5;
+}
+.label#error-label {
+    -fx-text-fill: #e74c3c;
+}
+
